@@ -80,4 +80,4 @@ Para darnos a conocer vamos a poner anuncios en la tele, radio y carteles public
 
 # Fase 1:
 
-https://www.figma.com/file/snu0mrQjmmHxAs6lLoNYlx/Stock-Investment-App-(Community)?node-id=0%3A1
+https://www.figma.com/proto/snu0mrQjmmHxAs6lLoNYlx/Stock-Investment-App-(Community)?node-id=22%3A3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=22%3A3
