@@ -76,3 +76,7 @@ Después estamos los cuatrato representantes del grupo que somos los jefes de la
 9. Comunicación:
 
 Para darnos a conocer vamos a poner anuncios en la tele, radio y carteles publicitarios.
+
+
+# Fase 1:
+
