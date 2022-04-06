@@ -1,4 +1,8 @@
 # Trabajo-final
+
+# Fase 0:
+
+
 1. Introducción:
  
  a) Nuestra empresa se dedica a predecir como va a ir la bolsa y se llama (nombre a elegir). Nuestra ubicación se encuentra en Madrid y nuestra misión es hacer que 
