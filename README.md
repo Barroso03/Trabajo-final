@@ -81,4 +81,3 @@ Para darnos a conocer vamos a poner anuncios en la tele, radio y carteles public
 # Fase 1:
 
 
-<img width="389" alt="Captura de pantalla 2022-04-06 a las 12 38 02" src="https://user-images.githubusercontent.com/91721668/161956842-ebd8384d-8470-4069-84a9-e50cd842f7ad.png">
