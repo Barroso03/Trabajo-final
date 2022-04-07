@@ -87,6 +87,8 @@ Después estamos los cuatrato representantes del grupo que somos los jefes de la
 
 Para darnos a conocer vamos a poner anuncios en la tele, radio y carteles publicitarios.
 
+## Link datasets:
+https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs
 
 # Fase 1:
 
