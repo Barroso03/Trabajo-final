@@ -26,6 +26,7 @@ def union_archivos_ETFs(path):
 union_archivos_ETFs(ruta_carpeta_ETFs())
 
 def renombrar_columnas_ETFs(df):
+    df=pd.read_csv('datos_archivo_ETFs.csv',sep=';')
     df.rename(columns={'Open':'Apertura','High':'Crecimiento','Low':'Bajadas','Close':'Finalizado','Volume':'Volumen'}, inplace=True)
     return df
 renombrar_columnas_ETFs(union_archivos_ETFs(ruta_carpeta_ETFs()))
