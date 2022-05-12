@@ -21,9 +21,15 @@ def union_archivos_ETFs(path):
     for i in archivos:
         archivo=pd.read_csv(i)
         df= pd.concat([df,archivo])
-        df.to_csv('datos_archivo_ETFs.csv', sep=',')
+        df.to_csv('datos_archivo_ETFs.csv', sep=';')
     return df
 union_archivos_ETFs(ruta_carpeta_ETFs())
+
+def renombrar_columnas_ETFs(df):
+    df.rename(columns={'Open':'Apertura','High':'Crecimiento','Low':'Bajadas','Close':'Finalizado','Volume':'Volumen'}, inplace=True)
+    return df
+renombrar_columnas_ETFs(union_archivos_ETFs(ruta_carpeta_ETFs()))
+
 
 def ruta_carpeta_Stocks():
     path='/Users/juanlu_navarro/Documents/Carrera Juan/programacion/Trabajo-final/Stocks'
@@ -37,7 +43,7 @@ def union_archivos_stocks(path):
     for i in archivos:
         archivo=pd.read_csv(i)
         df= pd.concat([df,archivo])
-        df.to_csv('datos_archivo_Stocks.csv', sep=',')
+        df.to_csv('datos_archivo_Stocks.csv', sep=';')
     return df
 union_archivos_stocks(ruta_carpeta_Stocks())
 
