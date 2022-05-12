@@ -1,0 +1,19 @@
+import pandas as pd
+url = "http://datos.igac.gov.co/datasets/c2b2cbf67faa49b5951bd78499a1d8a8_0.csv"
+df = pd.read_csv(url)
+
+nombres = {"ANO": "year", "MES": "month", "DIA": "day", "HORA": "hour"}
+df = df.rename(columns=nombres)
+
+df.index = pd.to_datetime(df[["year", "month", "day", "hour"]])
+
+df = df[["DECL"]]
+
+print(len(df))
+
+df = df.dropna()
+df = df[df.DECL != 0]
+
+print(len(df))
+
+df.plot()
