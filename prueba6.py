@@ -26,12 +26,12 @@ import datetime as dt
 from sklearn import linear_model 
 from sklearn.metrics import mean_absolute_error
 import plotly  
-import keras
 # import the relevant Keras modules
 from keras.models import Sequential
 from keras.layers import Activation, Dense
 from keras.layers import LSTM
 from keras.layers import Dropout
+
 
 # Input data files are available in the "../input/" directory.
 # For example, running this (by clicking run or pressing Shift+Enter) will list the files in the input directory
