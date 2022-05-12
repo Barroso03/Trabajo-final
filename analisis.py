@@ -10,18 +10,14 @@ def ruta_carpeta_ETFs():
     os.chdir(path)
 ruta_carpeta_ETFs()
 
-def union_datos_ETFs():
-    archivos= [x for x in os.listdir() if re.search('.txt',x)]
+def union_archivos_ETFs(path):
+    archivos= [ x for x in os.listdir() if re.search('.txt',x)]
     print(archivos)
-    dataset_ETFs=pd.DataFrame()
+    df= pd.DataFrame()
     for i in archivos:
         archivo=pd.read_csv(i)
-        dataset_ETFs= pd.concat[(dataset_ETFs,archivo)]
-    dataset_ETFs.to_csv('union_datos_ETFs.csv')
-    return dataset_ETFs
-union_datos_ETFs()
-
-
-
-
+        df= pd.concat([df,archivo])
+        df.to_csv('datos_archivo_ETFs.csv')
+    return df
+union_archivos_ETFs(ruta_carpeta_ETFs())
 
