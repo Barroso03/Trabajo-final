@@ -2,6 +2,9 @@
 import pandas as pd #ºpara trabajar con dataframes
 import os #para trabajar con los directorios
 import re #para trabajar con expresiones regulares
+import matplotlib.pyplot as plt
+import seaborn as sns
+
 
 #PASO 1: Unimos los archivos de cada una de las carpetas ETFs y Stock
 
@@ -37,5 +40,13 @@ def union_archivos_stocks(path):
         df.to_csv('datos_archivo_Stocks.csv', sep=';')
     return df
 union_archivos_stocks(ruta_carpeta_Stocks())
+
+#saca una grafica con como evoluciona volumen de cada uno de los archivos
+def grafica_volumen_ETFs(df):
+    df_volumen=df.groupby('Date').sum()
+    df_volumen.plot(x='Date',y='Volume')
+    plt.show()
+grafica_volumen_ETFs(union_archivos_ETFs(ruta_carpeta_ETFs()))
+
 
 
